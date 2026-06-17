@@ -123,7 +123,9 @@
                                 <img src="/assets/admin/img/menu-left-alt.svg" alt="Toggle sidebar" />
                             </a>
                             <a class="d-block d-md-none" data-widget="pushmenu" href="#" role="button" aria-label="Toggle sidebar"><img src="/assets/admin/img/menu-left-alt.svg" alt="Toggle sidebar" /></a>
-                            <a class="d-block d-sm-none d-md-block" href="#" role="button"><img src="/assets/admin/img/logo.png" alt="Logo" /></a>
+                            <a class="d-block d-sm-none d-md-block" href="#" role="button">
+                                <img style="max-height: 50px;" src="/assets/admin/img/logo.png" alt="Logo" />
+                            </a>
                         </div>
                         <div class="col-md-7 col-11 user-profile offset-md-1">
 

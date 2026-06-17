@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DMS Document Management System</title>
+    <title>Ballia Nagar Palika Parishad</title>
 
     <link href="{{asset('assets/frontend/css/landing/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -160,7 +160,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: url("https://bmiimaging.com/wp-content/uploads/2024/07/iStock-1647734399-1200x750.jpg") center/cover no-repeat;
+            background: url("assets/frontend/images/login-page-image.jpg") center/cover no-repeat;
             filter: blur(0px);
             transform: scale(1.05);
             opacity: 0.95;
@@ -251,7 +251,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4>Document Management System</h4>
+                    <h4>Ballia Nagar Palika Parishad</h4>
                 </div>
             </div>
         </div>
@@ -260,8 +260,8 @@
     <div class="hero">
         <div class="hero-left">
             <div class="panel">
-                <h1>Welcome to DMS<span style="color:#2563eb;">.</span></h1>
-                <p class="lead">A modern document management experience for users and departments—secure, simple, and fully responsive.</p>
+                <h1>Welcome to Ballia Nagar Palika Parishad<span style="color:#2563eb;">.</span></h1>
+                <p class="lead">A modern Ballia Nagar Palika Parishad experience for users and departments—secure, simple, and fully responsive.</p>
 
                 <div class="actions">
                     <a href="{{ url('login') }}" class="action-card">
@@ -279,7 +279,7 @@
                 </div>
 
                 <div class="note-box">
-                    Note: For any query, call or WhatsApp us at <a href="tel:+91000000000">+91 00000 00000</a> between 10:00 AM and 5:00 PM or email <a href="mailto:dsmnru.help@gmail.com">dsmnru.help@gmail.com</a>.
+                    Note: For any query, call or WhatsApp us at <a href="tel:+91000000000">+91 00000 00000</a> between 10:00 AM and 5:00 PM or email <a href="mailto:balli.help@gmail.com">balli.help@gmail.com</a>.
                 </div>
             </div>
         </div>
@@ -287,14 +287,14 @@
         <div class="hero-right">
             <div class="hero-sidepanel">
                 <h3>Smart document flow for your team</h3>
-                <p>Track approvals, manage records, and access documents from one central dashboard. The DMS interface is designed to keep the user journey fast, modern, and friendly.</p>
+                <p>Track approvals, manage records, and access documents from one central dashboard. The Ballia Nagar Palika Parishad interface is designed to keep the user journey fast, modern, and friendly.</p>
                 <span class="hero-badge">Single source of truth</span>
             </div>
         </div>
     </div>
 
     <footer class="site-footer">
-        <p>Copyright © 2021-22. All Rights Reserved - Document Management System</p>
+        <p>Copyright © 2021-22. All Rights Reserved - Ballia Nagar Palika Parishad</p>
         <p>Powered by <strong>Staqo World Pvt Ltd.</strong></p>
     </footer>
 

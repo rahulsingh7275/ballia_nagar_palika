@@ -16,9 +16,6 @@ class DatabaseSeeder extends Seeder
     {
         $roles = [
             ['name' => 'user', 'label' => 'User'],
-            ['name' => 'operator', 'label' => 'Operator'],
-            ['name' => 'checker', 'label' => 'Checker'],
-            ['name' => 'department_head', 'label' => 'Department Head'],
             ['name' => 'admin', 'label' => 'Admin'],
         ];
 
@@ -34,20 +31,6 @@ class DatabaseSeeder extends Seeder
             'name' => 'System Admin',
             'password' => Hash::make('password'),
             'role_id' => $adminRole?->id,
-        ]);
-        User::firstOrCreate([
-            'email' => 'operator@example.com',
-        ], [
-            'name' => 'Operator',
-            'password' => Hash::make('password'),
-            'role_id' => 2,
-        ]);
-        User::firstOrCreate([
-            'email' => 'checker@example.com',
-        ], [
-            'name' => 'checker',
-            'password' => Hash::make('password'),
-            'role_id' => 3,
         ]);
     }
 }

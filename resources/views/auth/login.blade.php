@@ -6,7 +6,7 @@
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card p-4">
-            <h3 class="mb-4">Login to DMS</h3>
+            <h3 class="mb-4 text-center">Login to<br/> Ballia Nagar Palika Parishad</h3>
             <form method="POST" action="{{ route('login.post') }}">
                 @csrf
                 <div class="mb-3">
