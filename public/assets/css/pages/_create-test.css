@@ -1,0 +1,70 @@
+.filter-table {
+  padding-bottom: 39px;
+  background: white; }
+  .filter-table .filters {
+    margin-bottom: 0px; }
+    .filter-table .filters ul .filter {
+      width: 100%; }
+  .filter-table table {
+    width: 100%; }
+    .filter-table table tbody tr {
+      border-bottom: 2.4px solid #dfdfdf;
+      cursor: pointer; }
+      .filter-table table tbody tr td {
+        padding: 9px 32px 8px 22px !important; }
+        .filter-table table tbody tr td i img {
+          width: 18px; }
+        .filter-table table tbody tr td input[type="text"] {
+          border-radius: 4px;
+          border: solid 1px #e0dfe1;
+          background-color: #ffffff;
+          padding: 7px 14px; }
+          .filter-table table tbody tr td input[type="text"]::-webkit-input-placeholder {
+            font-size: 13px;
+            font-weight: 600;
+            opacity: 0.5;
+            color: #3d3d3d; }
+          .filter-table table tbody tr td input[type="text"]:-ms-input-placeholder {
+            font-size: 13px;
+            font-weight: 600;
+            opacity: 0.5;
+            color: #3d3d3d; }
+          .filter-table table tbody tr td input[type="text"]::-ms-input-placeholder {
+            font-size: 13px;
+            font-weight: 600;
+            opacity: 0.5;
+            color: #3d3d3d; }
+          .filter-table table tbody tr td input[type="text"]::placeholder {
+            font-size: 13px;
+            font-weight: 600;
+            opacity: 0.5;
+            color: #3d3d3d; }
+
+.question_modal .modal-content {
+  position: relative;
+  border-top: 4px solid transparent; }
+  .question_modal .modal-content .modal-header {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    z-index: 11;
+    border: transparent; }
+    .question_modal .modal-content .modal-header button {
+      opacity: 1;
+      border: transparent; }
+      .question_modal .modal-content .modal-header button span {
+        font-size: 33px;
+        color: #000000;
+        opacity: .5; }
+  .question_modal .modal-content .modal-body {
+    padding: 40px 32px 40px; }
+    .question_modal .modal-content .modal-body > h1 {
+      font-weight: bold;
+      font-size: 16px; }
+    .question_modal .modal-content .modal-body p {
+      font-size: 14px;
+      font-weight: 600;
+      opacity: .5;
+      margin-bottom: 30px; }
+    .question_modal .modal-content .modal-body label {
+      display: block; }

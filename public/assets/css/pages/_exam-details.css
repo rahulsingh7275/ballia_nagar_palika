@@ -1,0 +1,14 @@
+.exam_type > div > ul > li.icon {
+  vertical-align: top; }
+  .exam_type > div > ul > li.icon img {
+    height: 76px;
+    width: 76px; }
+
+.exam_type > div > ul > li.data {
+  padding-left: 24px; }
+  .exam_type > div > ul > li.data h1 {
+    margin: 8px 0px 4px;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8;
+    line-height: 30px; }

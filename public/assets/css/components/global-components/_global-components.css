@@ -1,0 +1,48 @@
+/*Fonts*/
+body {
+  color: #000000; }
+
+a:hover {
+  opacity: .8 !important;
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02); }
+
+button:hover {
+  opacity: .8 !important; }
+
+.display-ib {
+  display: inline-block; }
+
+.pad-0 {
+  padding: 0px; }
+
+.center-aligned-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.mar-0 {
+  margin: 0px; }
+
+.pr-0 {
+  padding-right: 0px; }
+
+.pl-0 {
+  padding-left: 0px; }
+
+.btn-primary {
+  background: white;
+  border: transparent;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #191919; }
+  .btn-primary img {
+    vertical-align: middle;
+    padding-top: 5px;
+    margin-left: 8px; }

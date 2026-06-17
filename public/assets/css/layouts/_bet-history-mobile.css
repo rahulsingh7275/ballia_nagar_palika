@@ -1,0 +1,85 @@
+.main-container-accountstatement {
+  display: inline-block;
+  width: 100%;
+  margin-top: 58px;
+  min-height: calc(100vh - 58px);
+  padding-bottom: 105px; }
+  .main-container-accountstatement .back-account-statement-box {
+    padding: 19px 0px 0px 12px; }
+    .main-container-accountstatement .back-account-statement-box .back-click {
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+      .main-container-accountstatement .back-account-statement-box .back-click span {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        margin-right: 10px; }
+    .main-container-accountstatement .back-account-statement-box .account-statement {
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+  .main-container-accountstatement .balance-card {
+    display: inline-block;
+    width: 100%;
+    margin: 24px 0px 0px 0px; }
+    .main-container-accountstatement .balance-card .card-container {
+      border-radius: 20px; }
+      .main-container-accountstatement .balance-card .card-container .card-header {
+        border-radius: 20px 20px 0px 0px;
+        padding: 7px; }
+        .main-container-accountstatement .balance-card .card-container .card-header .credit-debit {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Conv_AvenirNextLTPro-Regular"; }
+        .main-container-accountstatement .balance-card .card-container .card-header .value {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Conv_AvenirNextLTPro-Bold"; }
+      .main-container-accountstatement .balance-card .card-container .date-balance-box {
+        padding: 16px 0px 0px 10px; }
+        .main-container-accountstatement .balance-card .card-container .date-balance-box .date-value {
+          margin-left: 9px; }
+      .main-container-accountstatement .balance-card .card-container .remarks-from-box {
+        padding: 16px 0px 16px 10px; }
+        .main-container-accountstatement .balance-card .card-container .remarks-from-box .remarks-value {
+          margin-left: 9px; }
+        .main-container-accountstatement .balance-card .card-container .remarks-from-box .from-value {
+          margin-left: 9px; }
+    .main-container-accountstatement .balance-card .text-name {
+      font-size: 15px;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+    .main-container-accountstatement .balance-card .text-value {
+      font-size: 14px;
+      font-family: "Conv_AvenirNextLTPro-Demi";
+      font-weight: 600; }
+  .main-container-accountstatement .filter-date-apply-box {
+    margin: 24px 16px 0px 16px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 12px 16px;
+    border-radius: 2px; }
+    .main-container-accountstatement .filter-date-apply-box .from-to-box {
+      padding-top: 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      .main-container-accountstatement .filter-date-apply-box .from-to-box .from-date .from-text {
+        font-size: 14px;
+        font-family: "Conv_AvenirNextLTPro-Regular";
+        font-weight: 600; }
+      .main-container-accountstatement .filter-date-apply-box .from-to-box .from-date .input-field input {
+        width: 100%;
+        padding: 8px 6px; }
+      .main-container-accountstatement .filter-date-apply-box .from-to-box .to-date .to-text {
+        font-size: 14px;
+        font-family: "Conv_AvenirNextLTPro-Regular";
+        font-weight: 600; }
+      .main-container-accountstatement .filter-date-apply-box .from-to-box .to-date .input-field input {
+        width: 100%;
+        padding: 8px 6px; }
+      .main-container-accountstatement .filter-date-apply-box .from-to-box .apply-btn button {
+        width: 100%;
+        padding: 9px 0px; }

@@ -1,0 +1,196 @@
+.result {   
+    border: #000000 thin solid;
+    width: 700px;
+    padding: 10px;
+    font-family: Arial;
+    /*background: url(http://localhost:8000/images/markbg.jpg) no-repeat;*/
+    background-size: cover;
+}
+table.result-head {
+    float: right;
+    font-size: 14px;
+}
+table.result-head td p{
+	margin-top: 0; 
+	margin-bottom: 2px;
+}
+td.result-sr{
+	vertical-align: bottom;
+	margin-top: 0;
+}
+td.result-sr p{
+	margin-top: 0!important; 
+	margin-bottom: 2px!important;
+}
+tr.result-roll td p{
+	margin-top: 0; 
+	margin-bottom: 1px
+}
+.header {
+    text-align: center;
+}
+.header-1 p{
+	text-align: center!important; 
+	margin-bottom: 8px !important;
+	margin-top: 0px!important; 
+	font-size: 18px!important; 
+	font-weight: bold;
+}
+.course{
+	text-transform: uppercase;
+	font-size:16px!important;
+	font-weight: inherit!important
+}
+table.head2{
+	width: 100%; margin-top: 10px; font-size: 13px;
+}
+table.student-details td {
+    padding: 5px;
+    
+    padding-left: 0px;
+}
+table.marks {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+tr.marks-head {
+    font-size: 11px;
+    font-weight: bold;
+}
+tr.marks-head th{
+    border: #000000 thin solid; 
+	width: 50px;
+	padding: 7px;
+	border-right: none;
+}
+tr.marks-head th:last-child{
+	border-right: #000000 thin solid;
+}
+tr.marks-head1 th:last-child{
+	border-right: #000000 thin solid;
+}
+.marks-head1 th{
+	border: #000000 thin solid;
+	padding: 7px; 
+	border-right: none; 
+	border-top: none;
+}
+.marks-data td{
+    border-left: #000000 thin solid;
+    border-bottom: #000000 thin solid;
+    padding: 7px;
+    vertical-align: top;
+    text-align: center;
+}
+.marks-data td:last-child{
+    border-right: #000000 thin solid;
+}
+tr.marks-footer td:nth-child(1) {
+    border-bottom: #000000 thin solid;
+    border-left: #000000 thin solid;
+    border-right: #000000 thin solid;
+	padding:4px 7px; 
+	border-bottom: none;
+	border-right: none;
+}
+tr.marks-footer td:nth-child(2){
+   padding:4px 7px;
+   border-bottom: none;
+   font-weight: bold;
+   font-size: 13px;
+}
+tr.marks-footer td:nth-child(3){
+   padding:4px 7px;
+   border-left:#000000 thin solid; 
+}
+tr.marks-footer td:nth-child(4){
+   border-right: #000000 thin solid;
+   font-weight: bold; font-size: 13px;
+}
+tr.marks-footer1 td:nth-child(1) {
+    border: #000000 thin solid;
+	padding:4px 7px; 
+	border-bottom: none; 
+	border-right: none;
+	border-top: none;
+    border-bottom: #000000 thin solid;
+}
+
+tr.marks-footer1 td:nth-child(2){
+  padding:4px 7px;
+  border-top: none; 
+  border-bottom: none;
+  font-weight: bold; 
+  font-size: 13px;
+  border-bottom: #000000 thin solid;
+}
+
+tr.marks-footer1 td:nth-child(3){
+   padding:4px 7px;
+   border-left:#000000 thin solid; 
+   border-top: none;
+   border-bottom: #000000 thin solid;
+}
+
+tr.marks-footer1 td:nth-child(4){
+   border-right: #000000 thin solid;
+   border-top: none; 
+   font-weight: bold;
+   font-size: 13px;
+   border-bottom: #000000 thin solid;
+}
+
+tr.marks-footer2 td:nth-child(1) {
+    border: #000000 thin solid;
+	padding:4px 7px; 
+	border-bottom: none;
+	border-right: none; 
+	border-top: none; 
+	border-bottom: #000000 thin solid;
+}
+tr.marks-footer2 td:nth-child(2){
+  padding:4px 7px; 
+  border-top: none;
+  border-bottom: none;
+  border-bottom: #000000 thin solid;
+  font-weight: bold; font-size: 13px;
+}
+tr.marks-footer2 td:nth-child(3){
+   padding:4px 7px;
+   border-left:#000000 thin solid; 
+   border-top: none;
+   border-bottom: #000000 thin solid;;
+}
+tr.marks-footer2 td:nth-child(4){
+   border-right: #000000 thin solid; 
+   border-top: none; 
+   border-bottom: #000000 thin solid;
+   font-weight: bold; font-size: 13px;
+}
+.example p{
+	font-size: 12px; 
+	margin-bottom: 5px;
+	text-align:left;
+}
+.result-footer{
+	width: 100%;
+	font-size: 12px; 
+	margin-top: 20px;
+}
+.result-footer td:first-child {
+    width: 140px;
+    vertical-align: bottom;
+}.result-footer td:first-child p {
+    margin: 0 0 10px;
+}
+.result-footer td {
+    text-align: center; 
+	font-weight: bold; 
+	font-size: 13px;
+}
+@media print {
+  .noPrint{
+    display:none;
+  }
+}

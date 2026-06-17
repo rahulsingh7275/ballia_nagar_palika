@@ -1,0 +1,240 @@
+.mobile {
+  /* Start Of Header*/
+  /* Start Of Header*/
+  /* Start Of Main Container*/
+  /* Start Of Main Container*/ }
+  .mobile .header {
+    padding: 12px 12px 12px 16px;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    width: 100%; }
+    .mobile .header .exp-pth-box .pth-box {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+      .mobile .header .exp-pth-box .pth-box .pth-value {
+        margin-left: 4px; }
+    .mobile .header .exp-pth-box .exp-box {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+      .mobile .header .exp-pth-box .exp-box .exp-value {
+        margin-left: 4px; }
+  .mobile .main-container {
+    display: inline-block;
+    width: 100%;
+    margin-top: 58px;
+    min-height: calc(100vh - 58px);
+    padding-bottom: 94px; }
+    .mobile .main-container .cricket-inplay-box {
+      display: inline-block;
+      width: 100%;
+      padding: 4px 1px 0px 4px; }
+      .mobile .main-container .cricket-inplay-box .inplay-pinned {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Conv_AvenirNextLTPro-Regular";
+        vertical-align: top; }
+      .mobile .main-container .cricket-inplay-box .icon-pinned {
+        height: 20px;
+        width: 20px;
+        margin-left: 16px; }
+    .mobile .main-container .cricket-wcup {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: "Conv_AvenirNextLTPro-Regular"; }
+      .mobile .main-container .cricket-wcup img {
+        height: 20px;
+        width: 20px;
+        margin-right: 4px; }
+    .mobile .main-container .teams-innning {
+      padding: 17px 16px 0px 17px; }
+      .mobile .main-container .teams-innning .team-a {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Conv_AvenirNextLTPro-Regular"; }
+        .mobile .main-container .teams-innning .team-a img {
+          margin-right: 8px; }
+      .mobile .main-container .teams-innning .team-b {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Conv_AvenirNextLTPro-Regular"; }
+        .mobile .main-container .teams-innning .team-b img {
+          margin-left: 8px; }
+    .mobile .main-container .live-score-container {
+      display: inline-block;
+      width: 100%;
+      background: white;
+      border-radius: 20px;
+      margin-top: 30px; }
+      .mobile .main-container .live-score-container .button-livescore button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 20px 20px 0px 0px;
+        border: transparent;
+        padding: 11px; }
+      .mobile .main-container .live-score-container .run-stats {
+        display: inline-block;
+        width: 100%;
+        padding-top: 13px;
+        padding: 16px 10px 22px 14px; }
+        .mobile .main-container .live-score-container .run-stats .over-run-stats {
+          border-radius: 20px;
+          padding: 14px; }
+          .mobile .main-container .live-score-container .run-stats .over-run-stats .run-rate {
+            padding-top: 6px; }
+          .mobile .main-container .live-score-container .run-stats .over-run-stats .run-over-container {
+            padding-bottom: 6px;
+            border-bottom: 1px solid white; }
+            .mobile .main-container .live-score-container .run-stats .over-run-stats .run-over-container .team-score span {
+              margin-left: 16px; }
+            .mobile .main-container .live-score-container .run-stats .over-run-stats .run-over-container .team-overs span {
+              margin-left: 16px; }
+        .mobile .main-container .live-score-container .run-stats .player-bowler-stats {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          padding-bottom: 6px; }
+          .mobile .main-container .live-score-container .run-stats .player-bowler-stats .batsman-stats {
+            margin-top: 21px;
+            border-right: 1px solid #bfc8cd; }
+            .mobile .main-container .live-score-container .run-stats .player-bowler-stats .batsman-stats .player-1-stats {
+              padding-bottom: 12px; }
+              .mobile .main-container .live-score-container .run-stats .player-bowler-stats .batsman-stats .player-1-stats .player-1-name {
+                font-size: 14px;
+                font-weight: 600;
+                font-family: "Conv_AvenirNextLTPro-Regular"; }
+              .mobile .main-container .live-score-container .run-stats .player-bowler-stats .batsman-stats .player-1-stats .palyer-1-run {
+                font-family: "Conv_AvenirNextLTPro-Regular";
+                font-size: 14px;
+                font-weight: 600;
+                font-family: "Conv_AvenirNextLTPro-Regular"; }
+              .mobile .main-container .live-score-container .run-stats .player-bowler-stats .batsman-stats .player-1-stats .player-1-ball {
+                font-size: 12px;
+                font-weight: 600; }
+          .mobile .main-container .live-score-container .run-stats .player-bowler-stats .run-per-ball-box {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            .mobile .main-container .live-score-container .run-stats .player-bowler-stats .run-per-ball-box .outer {
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+              border: 1px solid;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              .mobile .main-container .live-score-container .run-stats .player-bowler-stats .run-per-ball-box .outer .dot-ball {
+                height: 12px;
+                width: 12px;
+                background: red;
+                border-radius: 50%; }
+    .mobile .main-container .live-preview-btn button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 20px;
+      border: transparent;
+      margin-top: 10px; }
+      .mobile .main-container .live-preview-btn button img {
+        margin-right: 8px; }
+    .mobile .main-container .buttons-tied-odd {
+      display: inline-block;
+      width: 100%;
+      margin-top: 24px; }
+      .mobile .main-container .buttons-tied-odd .match-odd-btn button {
+        display: block;
+        width: 100%;
+        border: transparent;
+        padding: 9px 24px;
+        border-radius: 20px; }
+      .mobile .main-container .buttons-tied-odd .tied-match-btn button {
+        display: block;
+        width: 100%;
+        border: transparent;
+        padding: 9px 24px;
+        border-radius: 20px;
+        background: white; }
+    .mobile .main-container .match-odds {
+      padding: 16px 16px 24px 16px; }
+      .mobile .main-container .match-odds .match-odd_container {
+        display: inline-block;
+        border-radius: 20px;
+        padding-bottom: 15px;
+        width: 100%; }
+        .mobile .main-container .match-odds .match-odd_container .match-odd-header {
+          display: inline-block;
+          width: 100%;
+          border-radius: 20px 20px 0px 0px; }
+          .mobile .main-container .match-odds .match-odd_container .match-odd-header .match-odd-heading {
+            font-size: 16px; }
+          .mobile .main-container .match-odds .match-odd_container .match-odd-header .match-odd-rules {
+            font-size: 16px; }
+        .mobile .main-container .match-odds .match-odd_container .back {
+          padding: 12px 27px 11px 10px; }
+        .mobile .main-container .match-odds .match-odd_container .lay-2 {
+          padding: 12px 27px 11px 10px; }
+        .mobile .main-container .match-odds .match-odd_container i img {
+          padding: 12px 8px 11px 10px; }
+        .mobile .main-container .match-odds .match-odd_container .match-odd-value .card-value {
+          text-align: center;
+          padding: 8px 11px 6px 12px;
+          margin: 4px 0px; }
+    .mobile .main-container .fancy-bet-container {
+      border-radius: 20px;
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 6px; }
+      .mobile .main-container .fancy-bet-container .fancy-bet-header {
+        display: inline-block;
+        width: 100%;
+        padding: 12px 16px 10px 20px;
+        border-radius: 20px 20px 0px 0px; }
+      .mobile .main-container .fancy-bet-container .card-value {
+        text-align: center;
+        padding: 8px 11px 6px 12px;
+        margin: 4px 0px; }
+  .mobile .footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%; }
+    .mobile .footer .footer-main-panel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      background: white;
+      border-radius: 20px 20px 0px 0px; }
+      .mobile .footer .footer-main-panel .menu-btn {
+        width: 20%;
+        text-align: center;
+        padding: 9px; }
+      .mobile .footer .footer-main-panel .home-btn {
+        position: relative;
+        bottom: 30px;
+        background: beige;
+        background-color: #3b7996;
+        color: white;
+        border-radius: 20px;
+        height: 72px;
+        width: 72px;
+        text-align: center;
+        padding: 19px;
+        -webkit-box-shadow: 0 8px 12px 0 rgba(53, 72, 86, 0.5);
+        box-shadow: 0 8px 12px 0 rgba(53, 72, 86, 0.5); }
