@@ -57,11 +57,9 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
-
         @auth
         <aside class="main-sidebar sidebar-dark-primary">
-            <div class="navbg">
+            <div class="navbg"> 
                 <img src="/assets/admin/img/navtopbg.svg" />
             </div>
 
@@ -69,41 +67,109 @@
 
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        @php
+                            $currentUser = auth()->user();
+                        @endphp
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="{{ route('home') }}" class="nav-link">
                                 <i class="mdi mdi-home-outline"></i>
                                 <p>Home</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('dashboard') }}" class="nav-link">
-                                <i class="mdi mdi-view-dashboard-outline"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="mdi mdi-account-group"></i>
-                                <p>Property Taax<i class="fa fa-angle-left right"></i></p>
-                            </a>
-                            <ul class="nav nav-treeview" style="display: none;">
-                                
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.property-tax.upload') }}" class="nav-link">
-                                        <i class="mdi mdi-book-open-page-variant"></i>
-                                        <p>Upload Property Tax Data</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                     <a href="{{ route('admin.property-tax.list') }}" class="nav-link">
-                                        <i class="mdi mdi-shape-outline"></i>
-                                        <p>Property Tax Bills</p>
-                                    </a> 
-                                </li> 
-                            </ul>
-                        </li>
-
+                        </li> -->
+                        @if($currentUser?->isAdmin())
+                            <li class="nav-item">
+                                <a href="{{ route('dashboard') }}" class="nav-link">
+                                    <i class="mdi mdi-view-dashboard-outline"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.user-block-assignments.index') }}" class="nav-link">
+                                    <i class="mdi mdi-map-marker-radius"></i>
+                                    <p>Assigned Blocks</p>
+                                </a>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="mdi mdi-currency-inr"></i>
+                                    <p>Masters<i class="fa fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <a href="{{ route('admin.users.index') }}" class="nav-link">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                            <p>Users</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('admin.blocks.index') }}" class="nav-link">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                            <p>Blocks</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="mdi mdi-currency-inr"></i>
+                                    <p>Property Tax<i class="fa fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <a href="{{ route('admin.property-tax.upload') }}" class="nav-link">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                            <p>Upload Property Tax Data</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                         <a href="{{ route('admin.property-tax.list') }}" class="nav-link">
+                                            <i class="mdi mdi-shape-outline"></i>
+                                            <p>Property Tax Bills</p>
+                                        </a> 
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="mdi mdi-account-group"></i>
+                                    <p>Reports<i class="fa fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <a href="{{ route('admin.property-tax.upload') }}" class="nav-link">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                            <p>Upload Property Tax Data</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                         <a href="{{ route('admin.property-tax.list') }}" class="nav-link">
+                                            <i class="mdi mdi-shape-outline"></i>
+                                            <p>Property Tax Bills</p>
+                                        </a> 
+                                    </li> 
+                                </ul>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a href="{{ route('dashboard') }}" class="nav-link">
+                                    <i class="mdi mdi-view-dashboard-outline"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('assigned-blocks') }}" class="nav-link">
+                                    <i class="mdi mdi-map-marker-radius"></i>
+                                    <p>Assigned Blocks</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.property-tax.list') }}" class="nav-link">
+                                    <i class="mdi mdi-shape-outline"></i>
+                                    <p>Property Tax Bills</p>
+                                </a>
+                            </li>
+                        @endif
                     </ul>
                 </nav>
 
@@ -133,7 +199,7 @@
                                 <a data-toggle="dropdown" href="#" aria-expanded="true">
 
                                    @php $user = auth()->user(); @endphp
-                                   <p>User
+                                   <p>
                                     @if($user?->isDepartmentHead())
                                         <span>HOD</span>
                                     @elseif($user?->isAdmin())
@@ -160,7 +226,6 @@
                             </div>
 
                         </div>
-
                     </div>
                     @endauth
 

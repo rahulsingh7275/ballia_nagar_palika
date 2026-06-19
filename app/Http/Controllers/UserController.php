@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Block;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -34,8 +35,10 @@ class UserController extends Controller
             return redirect()->route('dashboard')->with('error', 'Unauthorized access.');
         }
 
-        $roles = Role::orderBy('label')->get();
-        return view('admin.users.create', compact('roles'));
+        $roles = Role::where('name','!=','admin')->orderBy('label')->get();
+        $blocks = Block::orderBy('name')->get();
+
+        return view('admin.users.create', compact('roles', 'blocks'));
     }
 
     public function store(Request $request)
@@ -53,14 +56,18 @@ class UserController extends Controller
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'confirmed', 'min:8'],
             'role_id' => ['required', 'exists:roles,id'],
+            'block_ids' => ['nullable', 'array'],
+            'block_ids.*' => ['integer', 'exists:blocks,id'],
         ]);
 
-        User::create([
+        $user = User::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
             'role_id' => $validated['role_id'],
         ]);
+
+        $user->blocks()->sync($validated['block_ids'] ?? []);
 
         return redirect()->route('admin.users.index')->with('status', 'User created successfully.');
     }
@@ -76,7 +83,9 @@ class UserController extends Controller
         }
 
         $roles = Role::orderBy('label')->get();
-        return view('admin.users.edit', compact('user', 'roles'));
+        $blocks = Block::orderBy('name')->get();
+
+        return view('admin.users.edit', compact('user', 'roles', 'blocks'));
     }
 
     public function update(Request $request, User $user)
@@ -94,6 +103,8 @@ class UserController extends Controller
             'email' => ['required', 'email', 'max:255', 'unique:users,email,' . $user->id],
             'password' => ['nullable', 'confirmed', 'min:8'],
             'role_id' => ['required', 'exists:roles,id'],
+            'block_ids' => ['nullable', 'array'],
+            'block_ids.*' => ['integer', 'exists:blocks,id'],
         ]);
 
         $user->name = $validated['name'];
@@ -105,8 +116,45 @@ class UserController extends Controller
         }
 
         $user->save();
+        $user->blocks()->sync($validated['block_ids'] ?? []);
 
         return redirect()->route('admin.users.index')->with('status', 'User updated successfully.');
+    }
+
+    public function assignBlocks(User $user)
+    {
+        if ($redirect = $this->requireAuth()) {
+            return $redirect;
+        }
+
+        if (! Auth::user()->isAdmin()) {
+            return redirect()->route('dashboard')->with('error', 'Unauthorized access.');
+        }
+
+        $blocks = Block::orderBy('name')->get();
+
+        return view('admin.users.assign-blocks', compact('user', 'blocks'));
+    }
+
+    public function storeBlocks(Request $request, User $user)
+    {
+        if ($redirect = $this->requireAuth()) {
+            return $redirect;
+        }
+
+        if (! Auth::user()->isAdmin()) {
+            return redirect()->route('dashboard')->with('error', 'Unauthorized access.');
+        }
+
+        $validated = $request->validate([
+            'block_ids' => ['nullable', 'array'],
+            'block_ids.*' => ['integer', 'exists:blocks,id'],
+        ]);
+
+        $user->blocks()->sync($validated['block_ids'] ?? []);
+
+        return redirect()->route('admin.users.assign-blocks', $user)
+            ->with('status', 'Blocks assigned successfully.');
     }
 
     public function destroy(User $user)

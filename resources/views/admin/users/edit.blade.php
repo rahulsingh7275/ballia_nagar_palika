@@ -35,6 +35,17 @@
                 @endforeach
             </select>
         </div>
+        <div class="mb-3">
+            <label class="form-label">Blocks</label>
+            <select name="block_ids[]" class="form-control" multiple size="8">
+                @foreach($blocks as $block)
+                    <option value="{{ $block->id }}" {{ in_array($block->id, old('block_ids', $user->blocks->pluck('id')->all()), true) ? 'selected' : '' }}>
+                        {{ $block->name }}
+                    </option>
+                @endforeach
+            </select>
+            <small class="text-muted">Hold Ctrl/Cmd to select multiple blocks.</small>
+        </div>
         <div class="d-flex gap-2">
             <button class="btn btn-primary">Update User</button>
             <a href="{{ route('admin.users.index') }}" class="btn btn-secondary">Cancel</a>

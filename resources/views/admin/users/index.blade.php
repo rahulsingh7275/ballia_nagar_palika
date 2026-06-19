@@ -3,7 +3,8 @@
 @section('title', 'User Management')
 
 @section('content')
-<div class="d-flex justify-content-between align-items-center mb-4">
+<hr />
+<div class="d-flex justify-content-between align-items-center mb-4 p-3">
     <h3>User Management</h3>
     <a href="{{ route('admin.users.create') }}" class="btn btn-primary">Create User</a>
 </div>
@@ -23,9 +24,10 @@
 @endif
 
 <div class="card p-3">
-    <table class="table table-striped">
+    <table class="table table-bordered mb-0 table-striped">
         <thead>
             <tr>
+                <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Role</th>
@@ -36,6 +38,7 @@
         <tbody>
             @foreach($users as $user)
                 <tr>
+                    <td>{{ $loop->iteration }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->role?->label ?? 'User' }}</td>

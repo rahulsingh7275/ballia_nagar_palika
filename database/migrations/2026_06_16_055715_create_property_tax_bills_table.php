@@ -14,7 +14,7 @@ return new class extends Migration
        Schema::create('property_tax_bills', function (Blueprint $table) {
 
     $table->id();
-
+    $table->string('block_id')->nullable();
     $table->string('ulb_id')->nullable();
     $table->string('old_property_id')->nullable();
     $table->string('property_id')->nullable();
@@ -34,53 +34,53 @@ return new class extends Migration
     $table->string('location_of_road_id')->nullable();
     $table->string('nature_of_house_id')->nullable();
 
-    $table->decimal('total_area_of_property',12,2)->nullable();
+    $table->string('total_area_of_property')->nullable();
     $table->string('property_useas_id')->nullable();
 
     $table->string('bill_number')->nullable();
     $table->string('bill_date')->nullable();
     $table->string('financial_year')->nullable();
 
-    $table->decimal('total_arv',12,2)->nullable();
+    $table->decimal('total_arv', 15, 2)->nullable();
 
-    $table->decimal('house_tax_current_tax',12,2)->nullable();
-    $table->decimal('house_tax_arrear',12,2)->nullable();
-    $table->decimal('house_tax_interest',12,2)->nullable();
-    $table->decimal('house_tax_total_amount',12,2)->nullable();
+    $table->decimal('house_tax_current_tax', 15, 2)->nullable();
+    $table->decimal('house_tax_arrear', 15, 2)->nullable();
+    $table->decimal('house_tax_interest', 15, 2)->nullable();
+    $table->decimal('house_tax_total_amount', 15, 2)->nullable();
 
-    $table->decimal('water_tax_current_tax',12,2)->nullable();
-    $table->decimal('water_tax_arrear',12,2)->nullable();
-    $table->decimal('water_tax_interest',12,2)->nullable();
-    $table->decimal('water_tax_total_amount',12,2)->nullable();
+    $table->decimal('water_tax_current_tax', 15, 2)->nullable();
+    $table->decimal('water_tax_arrear', 15, 2)->nullable();
+    $table->decimal('water_tax_interest', 15, 2)->nullable();
+    $table->decimal('water_tax_total_amount', 15, 2)->nullable();
 
-    $table->decimal('carpet_area',12,2)->nullable();
-    $table->decimal('covered_area',12,2)->nullable();
+    $table->string('carpet_area')->nullable();
+    $table->string('covered_area')->nullable();
 
-    $table->decimal('sewerage_tax_current_tax',12,2)->nullable();
-    $table->decimal('sewerage_tax_arrear',12,2)->nullable();
-    $table->decimal('sewerage_tax_interest',12,2)->nullable();
-    $table->decimal('sewerage_tax_total_amount',12,2)->nullable();
+    $table->decimal('sewerage_tax_current_tax', 15, 2)->nullable();
+    $table->decimal('sewerage_tax_arrear', 15, 2)->nullable();
+    $table->decimal('sewerage_tax_interest', 15, 2)->nullable();
+    $table->decimal('sewerage_tax_total_amount', 15, 2)->nullable();
 
-    $table->decimal('other_tax_current_tax',12,2)->nullable();
-    $table->decimal('other_tax_arrear',12,2)->nullable();
-    $table->decimal('other_tax_interest',12,2)->nullable();
-    $table->decimal('other_tax_total_amount',12,2)->nullable();
+    $table->decimal('other_tax_current_tax', 15, 2)->nullable();
+    $table->decimal('other_tax_arrear', 15, 2)->nullable();
+    $table->decimal('other_tax_interest', 15, 2)->nullable();
+    $table->decimal('other_tax_total_amount', 15, 2)->nullable();
 
-    $table->decimal('water_charge_current_tax',12,2)->nullable();
-    $table->decimal('water_charge_arrear',12,2)->nullable();
-    $table->decimal('water_charge_interest',12,2)->nullable();
-    $table->decimal('water_charge_total_amount',12,2)->nullable();
+    $table->decimal('water_charge_current_tax', 15, 2)->nullable();
+    $table->decimal('water_charge_arrear', 15, 2)->nullable();
+    $table->decimal('water_charge_interest', 15, 2)->nullable();
+    $table->decimal('water_charge_total_amount', 15, 2)->nullable();
 
     $table->string('chuk_number')->nullable();
 
     $table->string('latitude')->nullable();
     $table->string('longitude')->nullable();
 
-    $table->decimal('previous_year_advance_house',12,2)->nullable();
-    $table->decimal('previous_year_advance_water',12,2)->nullable();
-    $table->decimal('previous_year_advance_sewerage',12,2)->nullable();
-    $table->decimal('previous_year_advance_other',12,2)->nullable();
-    $table->decimal('previous_year_advance_water_charge',12,2)->nullable();
+    $table->string('previous_year_advance_house')->nullable();
+    $table->string('previous_year_advance_water')->nullable();
+    $table->string('previous_year_advance_sewerage')->nullable();
+    $table->string('previous_year_advance_other')->nullable();
+    $table->string('previous_year_advance_water_charge')->nullable();
 
     $table->timestamps();
 });

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('title', 'Create User')
-
 @section('content')
 <div class="card p-4">
     <h3>Create New User</h3>
@@ -25,7 +24,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Role</label>
-            <select name="role_id" class="form-select" required>
+            <select name="role_id" class="form-control" required>
                 <option value="">Select Role</option>
                 @foreach($roles as $role)
                     <option value="{{ $role->id }}">{{ $role->label }}</option>
